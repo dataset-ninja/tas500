@@ -17,7 +17,7 @@ PROJECT_NAME: str = "TAS500"
 PROJECT_NAME_FULL: str = (
     "TAS500: Semantic Segmentation Dataset for Autonomous Driving in Unstructured Environments"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
