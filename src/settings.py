@@ -23,7 +23,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_NC_SA_3_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive(), Industry.Robotics()]
 CATEGORY: Category = Category.SelfDriving(benchmark=True)
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]

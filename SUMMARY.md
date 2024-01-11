@@ -1,4 +1,4 @@
-**TAS500: semantic segmentation dataset for autonomous driving in unstructured environments** is a dataset for a semantic segmentation task. It is used in the automotive industry. 
+**TAS500: semantic segmentation dataset for autonomous driving in unstructured environments** is a dataset for a semantic segmentation task. It is used in the automotive and robotics industries. 
 
 The dataset consists of 640 images with 17516 labeled objects belonging to 24 different classes including *ego vehicle*, *low grass*, *forest*, and other: *sky*, *high grass*, *gravel*, *bush*, *tree trunk*, *building*, *asphalt*, *tree crown*, *pole*, *fence*, *misc. object*, *soil*, *misc. vegetation*, *car*, *wall*, *person*, *traffic sign*, *animal*, *bus*, *undefined*, and *sand*.
 
