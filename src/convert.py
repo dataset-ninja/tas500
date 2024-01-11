@@ -4,7 +4,6 @@ from urllib.parse import unquote, urlparse
 
 import numpy as np
 import supervisely as sly
-from cv2 import connectedComponents
 from dataset_tools.convert import unpack_if_archive
 from supervisely.io.fs import get_file_name, get_file_name_with_ext
 from tqdm import tqdm
@@ -110,13 +109,9 @@ def convert_and_upload_supervisely_project(
             obj_class = pixel_to_class.get(pixel)
 
             mask = mask_np == pixel
-            ret, curr_mask = connectedComponents(mask.astype("uint8"), connectivity=8)
-            for i in range(1, ret):
-                obj_mask = curr_mask == i
-                curr_bitmap = sly.Bitmap(obj_mask)
-                if curr_bitmap.area > 30:
-                    curr_label = sly.Label(curr_bitmap, obj_class, tags=tags)
-                    labels.append(curr_label)
+            curr_bitmap = sly.Bitmap(mask)
+            curr_label = sly.Label(curr_bitmap, obj_class, tags=tags)
+            labels.append(curr_label)
 
         return sly.Annotation(img_size=(img_height, img_wight), labels=labels)
 

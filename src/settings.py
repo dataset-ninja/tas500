@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "TAS500"
 PROJECT_NAME_FULL: str = (
-    "TAS500: semantic segmentation dataset for autonomous driving in unstructured environments"
+    "TAS500: Semantic Segmentation Dataset for Autonomous Driving in Unstructured Environments"
 )
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
@@ -24,9 +24,9 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.CC_BY_NC_SA_3_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive(), Industry.Robotics()]
-CATEGORY: Category = Category.SelfDriving(benchmark=True)
+CATEGORY: Category = Category.SelfDriving()
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2021-04-27"  # e.g. "YYYY-MM-DD"
@@ -71,12 +71,12 @@ AUTHORS_CONTACTS: Optional[List[str]] = [
 
 ORGANIZATION_NAME: Optional[
     Union[str, List[str]]
-] = "Institute for Autonomous Systems Technology Bundeswehr University Munich, Germany"
+] = "Institute for Autonomous Systems Technology, Bundeswehr University Munich, Germany"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.unibw.de/tas-en"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, each label has ***supercategory*** tag"
+    "__PRETEXT__": "Additionally, each label has ***supercategory*** tag. Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 
