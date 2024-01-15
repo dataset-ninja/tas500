@@ -13,7 +13,7 @@ SAMPLE_RATE = 1  # make less if dataset is too big
 # * Preview class to visualize in SUMMARY.md overview section
 # * Literal["ClassesPreview", "HorizontalGrid", "SideAnnotationsGrid", "Poster", "HorizontalGridAnimated", "VerticalGridAnimated"]
 # * If None, then preview_class will be set automatically to "ClassesPreview"
-PREVIEW_CLASS = "ClassesPreview"
+PREVIEW_CLASS = "Poster"
 
 IS_DETECTION_TASK: bool = None  # ? Set True if you want to visualize only bbox annotations
 if IS_DETECTION_TASK is None:
@@ -57,9 +57,9 @@ PREVIEWS_IS_DETECTION_TASK: bool = IS_DETECTION_TASK
 
 ###############################################################
 ### * Set up visualization params for ClassesPreview class ####
-CLASSES_PREVIEW_ROW_HEIGHT: int = 300
+CLASSES_PREVIEW_ROW_HEIGHT: int = None
 CLASSES_PREVIEW_PADDINGS: dict = None
-CLASSES_PREVIEW_ROWS: int = 4
+CLASSES_PREVIEW_ROWS: int = None
 CLASSES_PREVIEW_GAP: int = None
 CLASSES_PREVIEW_TAGS: List[str] = None
 # default {"top": "10%", "bottom": "10%", "left": "10%", "right": "10%"}
