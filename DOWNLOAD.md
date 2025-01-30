@@ -1,6 +1,6 @@
 Dataset **TAS500** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/iqesuihuwmffzdbqztq9c/tas500-DatasetNinja.tar?rlkey=q7w7fbrg23zu2p5zpjfpo4e6n&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzMzMzFfVEFTNTAwL3RhczUwMC1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJLNmdZZDhKVXJuODluNkdKR0lGcWRhME5xcnFkU3Q1dHdSM2lUUjVkaWZRPSJ9)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
